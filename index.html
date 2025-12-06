@@ -5,6 +5,39 @@
   <title>QA Portfolio – Lukas Bergmann</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+
+    header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #0f172a 0%, #0a0f1f 60%, #050814 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 229, 255, 0.18), transparent 60%),
+    radial-gradient(circle at 85% 30%, rgba(120, 220, 255, 0.12), transparent 60%),
+    linear-gradient(120deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 40%);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
     :root {
       --bg: #050816;
       --bg-alt: #0b1020;
@@ -483,5 +516,6 @@
   </div>
 </body>
 </html>
+
 
 
